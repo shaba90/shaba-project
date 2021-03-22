@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <title>letsplay</title>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body >
+  <div class="life-line-wrapper">
+    <div id="half" class="life-line active-score"><p>50:50</p></div>
+    <div id="audience" class="life-line active-score"><p>audience</p></div>
+    <div id="call" class="life-line active-score"><p>next</p></div>
+    <div id="quit" class="life-line active-score"><p>quit</p></div>
+  </div>
+
+  
+  <div class="modal hidden">
+    <img src="audi.jpg" alt="" width="500px">
+   
+  </div>
+  <div class="overlay hidden"></div>
+
+  <div class="gameoverModal hidden">
+    <p style="text-align: center; font-size: 50px; color: red;">Wrong!</p>
+  </div>
+  <div class="overlay hidden"></div>
+  
+
+
+  <!-- SCORE BOARD -->
+  <div class="score-board">
+    <ul>
+      <li id="src14" class="checkpoint">€ 1,000,000</li>
+      <li id="src13">€ 500,000</li>
+      <li id="src12">€ 250,000</li>
+      <li id="src11">€ 125,000</li>
+      <li id="src10">€ 64,000</li>
+      <li id="src9" class="checkpoint">€ 32,000</li>
+      <li id="src8">€ 16,000</li>
+      <li id="src7">€ 8,000</li>
+      <li id="src6">€ 4,000</li>
+      <li id="src5">€ 2,000</li>
+      <li id="src4" class="checkpoint">€ 1,000</li>
+      <li id="src3">€ 500</li>
+      <li id="src2">€ 300</li>
+      <li id="src1">€ 200</li>
+      <li id="src0" class="active-score">€ 100</li>
+    </ul>
+  </div>
+  
+
+  <div class="middle">
+    <!-- QUESTION -->
+    <div class="question-wapper">
+      <p class="question">Who is the Fastest Man Alive ?</p>
+    </div>
+    <!-- ANSWER -->
+    <div class="answer-wrapper">
+      <div class="answer-row">
+        <div id="option-1" class="option visible hover">The Flash</div>
+        <div id="option-2" class="option visible hover">Zoom</div>
+      </div>
+      <p style="color: red;" class="question-no">40</p>
+      <div class="answer-row">
+        <div id="option-3" class="option visible hover">Reverse Flash</div>
+        <div id="option-4" class="option visible hover">Savitar</div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+<audio controls autoplay  src="Who Wants To Be A Millionaire.mp3" id="phonefriend"></audio>
+
+
+    <script src="letsplay.js"></script>
+    <script>
+      window.onload=function() {
+        document.getElementById('phonefriend').play();
+      }
+    </script>
+</body >
+</html>
