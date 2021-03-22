@@ -129,7 +129,7 @@ body{
 }
 .nav-area{
   display: flex;
-  background: red;
+  background: rgb(20, 38, 56);
   border-radius: 2px;
   color: white;
 }
